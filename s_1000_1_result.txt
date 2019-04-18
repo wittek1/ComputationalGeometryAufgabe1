@@ -1,0 +1,16 @@
+Intersects found: 11
+Time passed: 0.004423022270202637s
+
+1_2
+1_3
+1_4
+2_3
+2_4
+3_4
+71_993
+83_804
+106_653
+190_996
+999_1000
+
+Program ended with exit code: 0

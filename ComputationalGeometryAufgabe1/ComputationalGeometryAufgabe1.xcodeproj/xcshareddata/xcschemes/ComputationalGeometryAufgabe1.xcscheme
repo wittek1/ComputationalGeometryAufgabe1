@@ -63,8 +63,16 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/julianwittek/Downloads/strecken/s_1000_1.dat"
+            argument = "/Users/julianwittek/Downloads/strecken/s_100000_1.dat"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/julianwittek/Downloads/strecken/s_10000_1.dat"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/julianwittek/Downloads/strecken/s_1000_1.dat"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
       <AdditionalOptions>
