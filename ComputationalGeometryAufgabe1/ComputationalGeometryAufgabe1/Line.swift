@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Line: Equatable, CustomStringConvertible {
+struct Line: Equatable {
     let start, end: Point
     let minX, maxX, minY, maxY: Double
     
@@ -45,19 +45,11 @@ class Line: Equatable, CustomStringConvertible {
                     return a * b <= 0 && c * d <= 0
                 }
             } else {
-                if ccw(line: self, point: line.start) != 0 {
-                    return false
-                } else {
-                    return line.start.isPartOfBoundingBox(line: self)
-                }
+                return line.start.isPartOfLine(line: self)
             }
         } else {
             if line.isLine() {
-                if ccw(line: line, point: self.start) != 0 {
-                    return false
-                } else {
-                    return self.start.isPartOfBoundingBox(line: line)
-                }
+                return self.start.isPartOfLine(line: line)
             } else {
                 return self.start == line.start
             }
@@ -66,17 +58,5 @@ class Line: Equatable, CustomStringConvertible {
     
     static func == (lhs: Line, rhs: Line) -> Bool {
         return lhs.start == rhs.start && lhs.end == rhs.end
-        //return (lhs.start == rhs.start && lhs.end == rhs.end) || (lhs.start == rhs.end && lhs.end == rhs.start)
-    }
-    
-    var description: String {
-        return "Line(\(self.start), \(self.end))"
-    }
-    
-    // > 0 left
-    // = 0 on
-    // < 0 right
-    func ccw(line: Line, point: Point) -> Double {
-        return line.start.y * point.x - line.end.y * point.x + line.end.x * point.y - line.start.x * point.y - line.start.y * line.end.x + line.start.x * line.end.y
     }
 }

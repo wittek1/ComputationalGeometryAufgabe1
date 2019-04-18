@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Point: Equatable, CustomStringConvertible{
+struct Point: Equatable {
+    
     let x, y: Double
     
     init(x: Double, y: Double) {
@@ -20,11 +21,15 @@ class Point: Equatable, CustomStringConvertible{
         return self.x >= line.minX && self.x <= line.maxX && self.y >= line.minY && self.y <= line.maxY
     }
     
-    static func == (lhs: Point, rhs: Point) -> Bool {
-        return lhs.x == rhs.x && lhs.y == rhs.y
+    func isPartOfLine(line: Line) -> Bool {
+        if ccw(line: line, point: self) != 0 {
+            return false
+        } else {
+            return self.isPartOfBoundingBox(line: line)
+        }
     }
     
-    var description: String {
-        return "Point(\(self.x), \(self.y))"
+    static func == (lhs: Point, rhs: Point) -> Bool {
+        return lhs.x == rhs.x && lhs.y == rhs.y
     }
 }

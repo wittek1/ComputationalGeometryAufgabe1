@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182E2F742264D4AD000337E2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E2F732264D4AD000337E2 /* Common.swift */; };
 		18F60384225F84C9003A0B83 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F60383225F84C9003A0B83 /* main.swift */; };
 		18F603932260F755003A0B83 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F603922260F755003A0B83 /* Point.swift */; };
 		18F603952260F7BE003A0B83 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F603942260F7BE003A0B83 /* Line.swift */; };
@@ -25,13 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		182E2F732264D4AD000337E2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		18F60380225F84C9003A0B83 /* ComputationalGeometryAufgabe1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ComputationalGeometryAufgabe1; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F60383225F84C9003A0B83 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		18F603922260F755003A0B83 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		18F603942260F7BE003A0B83 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		18F6039722613A18003A0B83 /* s_10000_1.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = s_10000_1.dat; sourceTree = "<group>"; };
-		18F6039822613A18003A0B83 /* s_100000_1.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = s_100000_1.dat; sourceTree = "<group>"; };
-		18F6039922613A18003A0B83 /* s_1000_1.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = s_1000_1.dat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,22 +63,12 @@
 		18F60382225F84C9003A0B83 /* ComputationalGeometryAufgabe1 */ = {
 			isa = PBXGroup;
 			children = (
-				18F60396226139DD003A0B83 /* strecken */,
 				18F60383225F84C9003A0B83 /* main.swift */,
 				18F603922260F755003A0B83 /* Point.swift */,
 				18F603942260F7BE003A0B83 /* Line.swift */,
+				182E2F732264D4AD000337E2 /* Common.swift */,
 			);
 			path = ComputationalGeometryAufgabe1;
-			sourceTree = "<group>";
-		};
-		18F60396226139DD003A0B83 /* strecken */ = {
-			isa = PBXGroup;
-			children = (
-				18F6039922613A18003A0B83 /* s_1000_1.dat */,
-				18F6039722613A18003A0B83 /* s_10000_1.dat */,
-				18F6039822613A18003A0B83 /* s_100000_1.dat */,
-			);
-			path = strecken;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182E2F742264D4AD000337E2 /* Common.swift in Sources */,
 				18F603952260F7BE003A0B83 /* Line.swift in Sources */,
 				18F603932260F755003A0B83 /* Point.swift in Sources */,
 				18F60384225F84C9003A0B83 /* main.swift in Sources */,
