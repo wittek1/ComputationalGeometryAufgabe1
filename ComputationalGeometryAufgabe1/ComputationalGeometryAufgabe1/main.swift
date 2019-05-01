@@ -8,6 +8,8 @@
 
 import Foundation
 
+let startTimer = CFAbsoluteTimeGetCurrent()
+
 let argumentCount = CommandLine.argc
 let arguments = CommandLine.arguments
 
@@ -39,7 +41,6 @@ var intersects = "\n"
 
 let lineCount = lines.count
 
-let startTimer = CFAbsoluteTimeGetCurrent()
 
 for firstLineIndex in 0..<lineCount - 1 {
     let firstLine = lines[firstLineIndex]
